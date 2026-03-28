@@ -1,0 +1,40 @@
+{
+    "name": "kishanhapani/hate-speech-detector",
+    "description": "WordPress plugin that screens blog comments for hate speech using the NLP Hate Speech Detection API.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KishanHapani",
+            "homepage": "https://github.com/KishanHapani"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "hate-speech",
+        "nlp",
+        "comment-moderation"
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "scripts": {
+        "lint": "phpcs --standard=WordPress .",
+        "lint-fix": "phpcbf --standard=WordPress ."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}

@@ -1,0 +1,33 @@
+# WordPress / PHP
+.htaccess
+wp-config.php
+wp-content/uploads/
+
+# Composer
+vendor/
+composer.lock
+
+# Node (if using build tooling in future)
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.phpunit.cache/
+.phpunit.result.cache
+coverage/
+clover.xml
+
+# Build artefacts
+*.zip
+*.tar.gz
